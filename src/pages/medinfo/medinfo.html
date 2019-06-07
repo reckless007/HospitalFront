@@ -1,0 +1,81 @@
+<!--
+  Generated template for the MedinfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Doctor Information</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding class = "page">
+  <ion-searchbar animated
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel" > 
+</ion-searchbar>
+<div text-center>
+<button ion-button (click)="getdata()" color="primary" block>Search</button>
+</div>
+
+<ion-grid>
+    <ion-row>
+        <ion-col size="2">
+            <button  class="but" (click)="child()" ion-button color="light">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/downloadc.jpeg">
+                  </ion-avatar>
+              Child
+            </button>
+            <button  class="but" (click)="skin()" ion-button color="light">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/imagesa.jpeg">
+                  </ion-avatar>
+              Skin & Hair
+            </button>
+        </ion-col>
+        <ion-col>
+            <button  class="but" (click)="eyes()" ion-button color="light">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/downloadb.jpeg">
+                  </ion-avatar>
+              Eyes
+            </button>
+            <button  class="but" (click)="heart()" ion-button color="light">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/downloadaaa.png">
+                  </ion-avatar>
+              Heart
+            </button>
+        </ion-col>
+  
+      </ion-row>
+
+
+</ion-grid>
+
+
+<ion-list *ngFor ="let ress of res" >
+<ion-card>
+  
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/imgs/downloadab.jpeg">
+    </ion-avatar>
+    <h2>{{ress.Name}} </h2>
+    <p>Years Of Experiance={{ress.Year}}</p>
+    <p>{{ress.Spec}} Specialist</p>
+  </ion-item>
+  <button ion-button full round color="dark">More Information</button>
+
+  <button ion-button full round color="dark" >Book Appointment</button>
+</ion-card>
+
+</ion-list>
+</ion-content>
+

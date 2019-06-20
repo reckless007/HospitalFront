@@ -12,6 +12,9 @@ import { LoginPage } from '../pages/login/login';
 import { HttpModule } from '@angular/http';
 import { MedinfoPage } from '../pages/medinfo/medinfo';
 import { AdvancePage } from '../pages/advance/advance';
+import { AppointPage } from '../pages/appoint/appoint';
+import { DetailPage } from '../pages/detail/detail';
+
 
 
 
@@ -22,7 +25,10 @@ import { AdvancePage } from '../pages/advance/advance';
     SignupPage,
     LoginPage,
     MedinfoPage, 
-    AdvancePage
+    AdvancePage,
+    AppointPage,
+    DetailPage
+    
   
   
   ],
@@ -38,7 +44,9 @@ import { AdvancePage } from '../pages/advance/advance';
     SignupPage,
     LoginPage,
     MedinfoPage,
-    AdvancePage
+    AdvancePage,
+    AppointPage,
+    DetailPage
    
    
   ],

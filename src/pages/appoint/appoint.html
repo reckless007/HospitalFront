@@ -1,0 +1,65 @@
+<!--
+  Generated template for the AppointPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+  <ion-navbar>
+    <ion-title  class="ab">Select a Time Slot</ion-title>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-scroll scrollX="true" style="width:100%; height: 120px" >
+    <div class="inner">
+     
+      <button class="but" ion-button color="light">1 July</button>
+      <button class="but" ion-button color="light">2 July</button>
+      <button class="but" ion-button color="light">3 July</button>
+      <button class="but" ion-button color="light">4 July</button>
+      <button class="but" ion-button color="light">5 July</button>
+      <button class="but" ion-button color="light">6 July</button>
+      <button class="but" ion-button color="light">7 July</button>
+      <button class="but" ion-button color="light">8 July</button>
+  
+    </div>
+ </ion-scroll>
+
+ <ion-content padding >
+    <ion-item-group>
+      <ion-item-divider color="light">Morning</ion-item-divider>
+      <button class="but1" [disabled]="buttonDisabled" (click)="info()" ion-button color="light">10:00am</button>
+      <button class="but1" (click)="info()" ion-button color="light">10:15am</button>
+      <button class="but1" (click)="info()" ion-button color="light">10:45am</button>
+      <button class="but1" (click)="info()" ion-button color="light">11:15am</button>
+      <button class="but1" (click)="info()" ion-button color="light">11:30am</button>
+      <button class="but1" (click)="info()" ion-button color="light">11:45am</button>
+    </ion-item-group>
+
+      <ion-item-group>
+        <ion-item-divider color="light">Afternoon</ion-item-divider>
+        <button class="but1" (click)="info()" ion-button color="light">2:00pm</button>
+        <button class="but1" (click)="info()" ion-button color="light">2:30pm</button>
+        <button class="but1" (click)="info()" ion-button color="light">2:45pm</button>
+        <button class="but1" (click)="info()" ion-button color="light">3:00pm</button>
+        <button class="but1" (click)="info()" ion-button color="light">3:30pm</button>
+        <button class="but1" (click)="info()" ion-button color="light">3:45pm</button>
+      </ion-item-group>
+  
+        <ion-item-group>
+          <ion-item-divider color="light">Evening</ion-item-divider>
+          <button class="but1" (click)="info()" ion-button color="light">7:00pm</button>
+          <button class="but1" (click)="info()" ion-button color="light">7:15pm</button>
+          <button class="but1" (click)="info()" ion-button color="light">7:30pm</button>
+          <button class="but1" (click)="info()" ion-button color="light">8:00pm</button>
+          <button class="but1" (click)="info()" ion-button color="light">8:15pm</button>
+          <button class="but1" (click)="info()" ion-button color="light">8:30pm</button>
+        </ion-item-group>
+      </ion-content>
+</ion-content>

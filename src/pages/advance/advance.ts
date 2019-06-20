@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AppointPage } from '../appoint/appoint';
 
 /**
  * Generated class for the AdvancePage page.
@@ -19,6 +20,7 @@ export class AdvancePage {
   public item :any=[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
     this.item=this.navParams.get('resk');
 
     for(let i=0;i<this.item.length;i++)
@@ -33,6 +35,9 @@ export class AdvancePage {
         
   }
 
+  }
+  appoint(){
+    this.navCtrl.push(AppointPage,{ress:this.ress});
   }
 
   ionViewDidLoad() {

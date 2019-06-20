@@ -52,7 +52,7 @@ child(){
   this.http.get('http://localhost:3000/getchild').subscribe(data => {
     this.item=data.json();
    
-
+    this.resk.length=0;
     for(let i=0;i<this.item.length;i++)
     {
   
@@ -65,6 +65,7 @@ child(){
        
   }
   this.navCtrl.push(AdvancePage,{resk:this.resk}) 
+  
 });
 
 }
@@ -72,7 +73,7 @@ skin(){
   this.http.get('http://localhost:3000/getskin').subscribe(data => {
     this.item=data.json();
  
-
+    this.resk.length=0;
     for(let i=0;i<this.item.length;i++)
     {
   
@@ -87,12 +88,14 @@ skin(){
        
   }
   this.navCtrl.push(AdvancePage,{resk:this.resk})
+ 
 });
 
 }
 eyes(){
   this.http.get('http://localhost:3000/geteyes').subscribe(data => {
     this.item=data.json();
+    this.resk.length=0;
     
 
     for(let i=0;i<this.item.length;i++)
@@ -109,12 +112,14 @@ eyes(){
        
   }
   this.navCtrl.push(AdvancePage,{resk:this.resk})
+  
 });
 
 }
 heart(){
   this.http.get('http://localhost:3000/getheart').subscribe(data => {
     this.item=data.json();
+    this.resk.length=0;
     
 
     for(let i=0;i<this.item.length;i++)
@@ -131,6 +136,7 @@ heart(){
        
   }
   this.navCtrl.push(AdvancePage,{resk:this.resk})
+  
 });
 
 }
